@@ -1,0 +1,59 @@
+*, *::before, *::after{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: medium;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, cyan, lightblue);
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+
+.maindiv{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 100px);
+    border: 3px solid rgb(67, 67, 240);
+}
+
+.spantwo{
+    grid-column: span 2;
+}
+
+.screendiv{
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.screentop{
+    font-size: 1.5rem;
+    
+}
+.screenbot{
+    font-size: 2.5rem;
+}
+
+.button{
+    background-color: rgb(66, 195, 255);
+    border-style: none;
+    border: 1px solid blue;
+}
+
+ .button:hover{
+    background-color: white;
+    cursor: pointer;
+
+} 
